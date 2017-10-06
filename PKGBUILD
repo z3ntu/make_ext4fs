@@ -20,13 +20,13 @@ source=(git+https://android.googlesource.com/platform/system/core#tag=android-$p
         fix_build_core.patch
         fix_build_selinux.patch
         canned_revert.patch) # partial revert of system/extras commit aad1accb587aa708012b329c784332dcc9991de6
-sha1sums=('SKIP'
-          'SKIP'
-          'SKIP'
-          '795a18c989b6f14c992fa6115903a622646bc157'
-          '45e41bab3633bb0be96b238aae3164a5c90721f1'
-          'ec473160d7445f97bccabd1c32ac0ae2f77900c1'
-          '4588694d06e5ff2e0477646235e3453c26423af3')
+sha256sums=('SKIP'
+            'SKIP'
+            'SKIP'
+            '23064d4aff33f238a6dc541b7c4761bcca6f915d74dbbfaaded407ee97372f59'
+            '31348e0f8b808a82f924a4a98c203b20d9b93d78e2f5ac009cf2722fc03710d9'
+            '0109b6050be38e9363dd033de965f9b9d21c2c9fd6419ec525d091ce1929c75d'
+            '5ede38e9e542b2c9bb6c7f052363eafbf2d2ea8e26c43165163a510acfbf5625')
 
 prepare() {
   PKGVER=$pkgver ./generate_build.rb > build.ninja
