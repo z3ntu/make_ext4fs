@@ -4,7 +4,7 @@
 # Contributor: Alucryd <alucryd at gmail dot com>
 
 pkgname=android-tools-fsutils
-pkgver=8.0.0_r11
+pkgver=8.0.0_r17
 pkgrel=1
 pkgdesc='Android platform tools-fsutils'
 arch=(i686 x86_64)
