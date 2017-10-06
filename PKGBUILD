@@ -3,14 +3,14 @@
 # Contributor: 謝致邦 <Yeking@Red54.com>
 # Contributor: Alucryd <alucryd at gmail dot com>
 
-pkgname=android-tools
+pkgname=android-tools-fsutils
 pkgver=8.0.0_r11
 pkgrel=1
-pkgdesc='Android platform tools'
+pkgdesc='Android platform tools-fsutils'
 arch=(i686 x86_64)
 url='http://tools.android.com/'
 license=(Apache MIT)
-depends=(pcre2 libusb)
+depends=(pcre2)
 optdepends=('python: for mkbootimg script')
 makedepends=(git clang gtest ruby cmake ninja go)
 source=(git+https://android.googlesource.com/platform/system/core#tag=android-$pkgver
