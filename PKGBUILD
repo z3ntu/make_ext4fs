@@ -1,9 +1,9 @@
-# $Id$
-# Maintainer: Anatol Pomozov
+# Maintainer: Luca Weiss <luca (at) z3ntu (dot) xyz>
+# Contributor: Anatol Pomozov
 # Contributor: 謝致邦 <Yeking@Red54.com>
 # Contributor: Alucryd <alucryd at gmail dot com>
 
-pkgname=android-tools-fsutils
+pkgname=make_ext4fs
 pkgver=8.0.0_r17
 pkgrel=1
 pkgdesc='Android platform tools-fsutils'
@@ -11,7 +11,6 @@ arch=(i686 x86_64)
 url='http://tools.android.com/'
 license=(Apache MIT)
 depends=(pcre2)
-optdepends=('python: for mkbootimg script')
 makedepends=(git clang gtest ruby cmake ninja go)
 source=(git+https://android.googlesource.com/platform/system/core#tag=android-$pkgver
         git+https://android.googlesource.com/platform/system/extras#tag=android-$pkgver
