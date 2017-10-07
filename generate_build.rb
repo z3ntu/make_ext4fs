@@ -151,6 +151,6 @@ libsepol = compile(expand('selinux/libsepol/src', libsepolfiles), '-Iselinux/lib
 make_ext4fsfiles = %w(
   make_ext4fs_main.c
 )
-make_ext4fs = compile(expand('extras/ext4_utils', make_ext4fsfiles), '-D_GNU_SOURCE -DHOST -Iextras/ext4_utils/include -Iselinux/libselinux/include')
+make_ext4fs = compile(expand('extras/ext4_utils', make_ext4fsfiles), '-DHOST -Iextras/ext4_utils/include -Iselinux/libselinux/include')
 
 link('make_ext4fs', make_ext4fs + libext4_utils + libsparse +  libselinux + libsepol, '-lz -lpcre2-8')
